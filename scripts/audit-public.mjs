@@ -56,6 +56,18 @@ const patterns = [
   /\bAKIA[0-9A-Z]{16}\b/,
   /\beyJ[A-Za-z0-9_-]{30,}\.[A-Za-z0-9_-]{30,}\.[A-Za-z0-9_-]{15,}/,
 ];
+// Public repository links can contain a maintainer handle also present in a
+// private denylist. Exempt only the declared repository URL from that list;
+// credential patterns still inspect the original, unmodified content.
+const packageMetadata = JSON.parse(await readFile(join(root, 'package.json'), 'utf8'));
+const repositoryUrl = packageMetadata.repository?.url
+  ?.replace(/^git\+/, '')
+  .replace(/\.git$/, '');
+const publicRepositoryPattern =
+  typeof repositoryUrl === 'string' &&
+  /^https:\/\/(?:github\.com|gitlab\.com)\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repositoryUrl)
+    ? new RegExp(repositoryUrl.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?=$|[/.#?\\s)"\x27`])', 'g')
+    : null;
 const failures = [];
 for (const rel of new Set(candidates)) {
   if (
@@ -68,9 +80,12 @@ for (const rel of new Set(candidates)) {
   }
   const bytes = await readFile(join(root, rel));
   const text = bytes.toString();
+  const privateText = publicRepositoryPattern
+    ? text.replace(publicRepositoryPattern, '[public repository]')
+    : text;
   if (
     denylist.some(
-      (v) => typeof v === 'string' && v.length > 3 && text.toLowerCase().includes(v.toLowerCase()),
+      (v) => typeof v === 'string' && v.length > 3 && privateText.toLowerCase().includes(v.toLowerCase()),
     ) ||
     patterns.some((p) => p.test(text))
   )

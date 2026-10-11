@@ -3,7 +3,7 @@
   "name": "Alfred",
   "version": "0.20.2",
   "config_flow": true,
-  "documentation": "https://www.home-assistant.io/integrations/",
+  "documentation": "https://github.com/maxglynjones/alfred/blob/main/docs/setup/README.md",
   "codeowners": [],
   "iot_class": "local_push",
   "requirements": [],
@@ -12,5 +12,6 @@
     "frontend",
     "conversation",
     "stt"
-  ]
+  ],
+  "issue_tracker": "https://github.com/maxglynjones/alfred/issues"
 }

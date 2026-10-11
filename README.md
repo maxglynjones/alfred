@@ -10,7 +10,7 @@ The personality is a restrained English butler: helpful, a little dry, and custo
 
 **Open source · MIT licensed · independently self-hosted · iOS focused**
 
-[Start from scratch](docs/setup/README.md) · [Feature examples](docs/FEATURES.md) · [Controls](docs/setup/CONTROLS.md) · [Developer guide](docs/development/README.md) · [Contribute](CONTRIBUTING.md)
+[GitHub](https://github.com/maxglynjones/alfred) · [Start from scratch](docs/setup/README.md) · [Feature examples](docs/FEATURES.md) · [Controls](docs/setup/CONTROLS.md) · [Developer guide](docs/development/README.md) · [Contribute](CONTRIBUTING.md)
 
 > **Read before installing:** this is a community source project. The current glasses client needs a package generated for your own HTTPS Home Assistant address and installed through your own Even Hub developer application. It is not a universal, install-and-go Even Store download. [Why the package is specific to your server](docs/setup/EVEN.md).
 
@@ -141,8 +141,8 @@ The [complete setup guide](docs/setup/README.md) covers tools, HA transfer, HTTP
 A compact command reference, after installing the build tools:
 
 ```sh
-# Copy this repository's HTTPS clone URL from its Code menu.
-git clone REPOSITORY_URL alfred
+# Clone the Alfred source.
+git clone https://github.com/maxglynjones/alfred.git alfred
 cd alfred
 npm install --global pnpm@10.18.3
 pnpm install --frozen-lockfile

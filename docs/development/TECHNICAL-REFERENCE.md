@@ -14,7 +14,7 @@ Reviewed 11 October 2026 against Alfred 0.20.1. This is a community project exer
 | Build | Node 24.19.0 in this workspace; supported Node 22/24, pnpm 10.18.3, Python 3.12+ | Current toolchain/repository instructions. Not a fresh-machine install |
 | Working connections | Tailscale, OpenAI, Google, Hue-connected lighting, Tapo plugs, HA lists and iPhone push | Reference installation and user feedback; no public account/configuration exported |
 
-The repository currently exists as a local source folder; no verified public GitHub URL, Git history or published release is claimed. Version numbers are a reference snapshot, not minimum guaranteed hardware firmware. Target versions must be retested.
+The source repository is [Alfred on GitHub](https://github.com/maxglynjones/alfred). Measurements below remain historical development evidence; the repository URL does not imply a published binary release or wider compatibility validation. Version numbers are a reference snapshot, not minimum guaranteed hardware firmware. Target versions must be retested.
 
 ## Validation categories
 

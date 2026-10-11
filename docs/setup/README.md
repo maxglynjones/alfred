@@ -42,10 +42,10 @@ python3 --version
 
 If your `python3` is older than 3.12, install a newer Python and adjust your PATH before building. The backend uses HA's Python at runtime; do not install Alfred into macOS system Python.
 
-Copy this repository's **HTTPS clone URL** from GitHub's Code menu. Replace `REPOSITORY_URL` below, then run:
+Clone the Alfred repository, then install the build dependencies:
 
 ```sh
-git clone REPOSITORY_URL alfred
+git clone https://github.com/maxglynjones/alfred.git alfred
 cd alfred
 pnpm install --frozen-lockfile
 pnpm pack:ha

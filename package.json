@@ -34,5 +34,13 @@
     "node": ">=22 <25"
   },
   "packageManager": "pnpm@10.18.3",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxglynjones/alfred.git"
+  },
+  "homepage": "https://github.com/maxglynjones/alfred#readme",
+  "bugs": {
+    "url": "https://github.com/maxglynjones/alfred/issues"
+  }
 }
