@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="780" viewBox="0 0 1280 780" role="img" aria-labelledby="t d"><title id="t">Alfred: ask, done, carry on</title><desc id="d">Illustrated examples, not screenshots of glasses hardware.</desc><defs><radialGradient id="glow"><stop stop-color="#17452a"/><stop offset="1" stop-color="#07110c"/></radialGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#375541" stroke-width=".5"/></pattern></defs><rect width="1280" height="780" fill="#07110c"/><ellipse cx="650" cy="250" rx="650" ry="480" fill="url(#glow)"/><rect width="1280" height="780" fill="url(#grid)" opacity=".28"/>
+<svg x="1090" y="52" width="108" height="108" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Alfred, your personal butler"><rect width="128" height="128" rx="30" fill="#0b2113"/><path fill="#c9fce0" d="M39 48c-5-26 46-35 50-7l-5 13-2-16c-12 6-27 2-35 8l-2 14zM46 50h7v15c0 10 5 17 11 17s11-7 11-17V50h7v15c0 14-8 24-18 24S46 79 46 65zM39 87l13 12 12 19H22v-12zM89 87l17 19v12H64l12-19zM49 91l12 6-12 7zM79 91l-12 6 12 7z"/><path d="M52 60h5m14 0h5M59 74h10" fill="none" stroke="#89d8a6" stroke-width="3" stroke-linecap="round"/><circle cx="75" cy="61" r="8" fill="none" stroke="#89d8a6" stroke-width="2"/><path d="M83 64v13" stroke="#89d8a6" stroke-width="2"/></svg>
+
+<text x="64" y="70" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="15" font-weight="400">OPEN SOURCE / SELF-HOSTED / EVEN G2</text>
+<text x="60" y="160" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="86" font-weight="700">alfred</text>
+<text x="64" y="217" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="36" font-weight="400">Less screen. More done.</text>
+<text x="64" y="257" fill="#adc8b5" font-family="Arial,sans-serif" font-size="22" font-weight="400">A small assistant for the things you would rather just ask.</text>
+<rect x="64" y="327" width="366" height="227" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="88" y="365" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="15" font-weight="400">01</text>
+<text x="88" y="413" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="34" font-weight="700">ask</text>
+<text x="88" y="465" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="18" font-weight="400">“Turn the bedroom lights off.”</text>
+<text x="88" y="499" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="18" font-weight="400">Use deliberate voice input.</text>
+<rect x="457" y="327" width="366" height="227" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="481" y="365" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="15" font-weight="400">02</text>
+<text x="481" y="413" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="34" font-weight="700">done</text>
+<text x="481" y="465" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="18" font-weight="400">A short answer. A verified tick.</text>
+<text x="481" y="499" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="18" font-weight="400">Long research goes to email.</text>
+<path d="M735 362l12 12 24-28" stroke="#8ddeaa" stroke-width="5" fill="none" stroke-linecap="round"/>
+<rect x="850" y="327" width="366" height="227" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="874" y="365" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="15" font-weight="400">03</text>
+<text x="874" y="413" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="34" font-weight="700">carry on</text>
+<text x="874" y="465" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="18" font-weight="400">The display goes quiet.</text>
+<text x="874" y="499" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="18" font-weight="400">Your attention stays yours.</text>
+<text x="64" y="621" fill="#baf2cd" font-family="Arial,sans-serif" font-size="23" font-weight="400">home  ·  shopping  ·  reminders  ·  mail  ·  calendar</text>
+<text x="64" y="661" fill="#baf2cd" font-family="Arial,sans-serif" font-size="23" font-weight="400">weather  ·  news  ·  memory  ·  research</text>
+<text x="64" y="735" fill="#89a693" font-family="Arial,sans-serif" font-size="15" font-weight="400">Interaction illustration • not a through-the-lens capture • optional services require setup</text>
+</svg>

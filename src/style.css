@@ -1,0 +1,436 @@
+@import '../public/studio/design-system.css';
+/* Companion: deliberate connection, lists and review; glasses remain voice first. */
+body {
+  margin: 0;
+  padding: 20px 20px calc(24px + env(safe-area-inset-bottom));
+  font-size: 14px;
+}
+main {
+  max-width: 800px;
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 0 18px;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 550;
+}
+.edition {
+  font-size: 11px;
+  color: var(--muted);
+}
+.phone-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 18px 0;
+}
+.phone-nav button {
+  color: var(--muted);
+  background: transparent;
+  border-color: transparent;
+  font-size: 14px;
+}
+.phone-nav button[aria-pressed='true'] {
+  color: var(--ink);
+  background: #1a2720;
+  border-color: var(--line);
+}
+.phone-nav .utility {
+  margin-left: auto;
+}
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 0 18px;
+}
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+h2 {
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+h3 {
+  font-size: 16px;
+}
+#connection {
+  font-size: 13px;
+  max-width: 350px;
+  margin: 0;
+}
+.card,
+.workspace,
+.connection-help {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  margin: 14px 0;
+  background: var(--panel);
+}
+summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 500;
+}
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.examples span {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.essentials > summary {
+  padding: 0;
+}
+.workspace > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+.workspace[open] > summary {
+  margin-bottom: 16px;
+}
+.workspace nav {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+.glass-card {
+  background: #070b08;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.screen-label,
+.screen-caption {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  color: var(--muted);
+  font-size: 11px;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+.actions.primary button:first-child {
+  background: var(--accent);
+  color: var(--bg);
+}
+.settings-tile {
+  width: 100%;
+  justify-content: space-between;
+  margin: 8px 0;
+  min-height: 56px;
+  text-align: left;
+}
+.companion-dialog > .card {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.companion-dialog .dialog-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+.companion-dialog h2 {
+  margin: 0;
+}
+.companion-dialog > details > summary {
+  display: none;
+}
+.companion-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.companion-list-grid section {
+  padding: 18px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.companion-list-grid h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 12px;
+}
+.list-count {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.companion-list-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.companion-list-grid li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 13px 0;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--line);
+}
+.companion-list-grid li:before {
+  content: '';
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+}
+.companion-list-grid li:last-child {
+  border-bottom: 0;
+}
+.list-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.list-toolbar h2 {
+  margin: 4px 0 0;
+}
+.list-toolbar button {
+  flex-shrink: 0;
+}
+#connection-panel:has(#pairing-form[hidden]) {
+  display: none;
+}
+#conversation p,
+#phone-job-result {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+pre {
+  font:
+    12px ui-monospace,
+    monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 320px;
+  overflow: auto;
+  color: var(--muted);
+}
+footer {
+  padding: 20px 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+li {
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 8px 0;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 16px 14px calc(24px + env(safe-area-inset-bottom));
+  }
+  .phone-nav button {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .phone-nav {
+    gap: 2px;
+  }
+  .phone-nav svg {
+    width: 18px;
+    height: 18px;
+  }
+  .companion-list-grid {
+    grid-template-columns: 1fr;
+  }
+  .intro {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .edition {
+    font-size: 10px;
+  }
+  .card,
+  .workspace,
+  .connection-help {
+    padding: 18px;
+  }
+}
+
+/* Collapsed utilities remain compact touch rows. */
+details.card:not([open]),
+details.workspace:not([open]) {
+  padding: 6px 18px;
+}
+
+[data-phone-view]:not([hidden]) {
+  animation: alfred-enter 160ms ease-out;
+}
+#phone-lists-status {
+  min-height: 22px;
+  margin: 0 0 12px;
+  font-size: 12px;
+}
+
+.companion-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0;
+  margin: 16px 0;
+  border: 0;
+  background: none;
+}
+.companion-tile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 18px;
+  min-height: 140px;
+  text-align: left;
+  border-radius: var(--radius);
+  background: var(--panel);
+  gap: 14px;
+}
+.companion-tile-copy strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 550;
+  margin-bottom: 6px;
+}
+.companion-tile-copy small {
+  font-size: 12px;
+}
+.tile-icon {
+  color: var(--accent);
+  display: inline-flex;
+}
+.view-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 18px 0;
+}
+.view-heading h1 {
+  font-size: 24px;
+}
+.view-heading button {
+  background: none;
+}
+.clear-list {
+  margin: 0 0 14px;
+  padding: 6px 10px;
+  min-height: 36px;
+  font-size: 12px;
+  background: none;
+  color: var(--muted);
+}
+button.danger {
+  background: #422720;
+  color: #ffd9ca;
+  border-color: #80513c;
+}
+.companion-event {
+  display: flex;
+  gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+.companion-event > div {
+  min-width: 0;
+  flex: 1;
+}
+.event-icon {
+  display: inline-flex;
+  color: var(--accent);
+  margin-top: 3px;
+}
+.event-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.companion-event strong {
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.companion-event p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 8px 0 0;
+  font-size: 13px;
+}
+.reminder-row {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+.reminder-row small {
+  margin-top: 6px;
+}
+#phone-jobs-list > p {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+}
+#phone-jobs-list button {
+  margin-top: 10px;
+}

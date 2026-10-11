@@ -1,0 +1,50 @@
+{
+  "name": {
+    "label": "Name",
+    "type": "string",
+    "profile": true
+  },
+  "addressAs": {
+    "label": "Form of address",
+    "type": "string",
+    "profile": true,
+    "choices": ["none", "sir", "madam", "name"]
+  },
+  "gender": {
+    "label": "Gender",
+    "type": "string",
+    "profile": true
+  },
+  "selfEmail": {
+    "label": "Default email recipient",
+    "type": "string",
+    "profile": true
+  },
+  "timezone": {
+    "label": "Timezone",
+    "type": "string",
+    "profile": true
+  },
+  "weatherCity": {
+    "label": "Weather town",
+    "type": "string"
+  },
+  "dashboardAgenda": {
+    "label": "Dashboard calendar agenda",
+    "type": "boolean"
+  },
+  "mailProvider": {
+    "label": "Preferred mail account",
+    "type": "string",
+    "choices": ["none", "google", "outlook"]
+  },
+  "calendarProvider": {
+    "label": "Preferred calendar account",
+    "type": "string",
+    "choices": ["none", "google", "outlook"]
+  },
+  "emailOverflow": {
+    "label": "Email answers longer than one display page",
+    "type": "boolean"
+  }
+}

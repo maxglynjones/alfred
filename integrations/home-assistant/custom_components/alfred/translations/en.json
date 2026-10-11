@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Alfred",
+        "description": "Run your personal assistant inside Home Assistant. After adding Alfred, open its sidebar to choose AI, optional accounts, home permissions and pairing."
+      }
+    },
+    "abort": {
+      "already_configured": "Alfred is already configured."
+    }
+  }
+}

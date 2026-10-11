@@ -1,0 +1,18 @@
+name: Bug report
+description: Report a reproducible issue without credentials or personal content.
+body:
+  - type: markdown
+    attributes:
+      value: Do not include API keys, pairing codes, HA exports, private URLs, email/calendar contents or identifying screenshots. Report exploitable security issues privately.
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Include a sanitised example command and expected behaviour.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment and steps
+      description: Alfred/HA/Even versions, host type, provider type and a minimal safe reproduction. No account details.
+    validations:
+      required: true

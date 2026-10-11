@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc"><title id="title">Reminders without another native app.</title><desc id="desc">Supported HA/iPhone delivery, not unrestricted iOS notification interception.</desc><defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#183023" stroke-width="0.5"/></pattern><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#8ae3a2" stroke-width="1.2"/></marker></defs><rect width="1280" height="820" fill="#07100b"/><rect width="1280" height="820" fill="url(#grid)" opacity="0.45"/>
+<text x="40" y="38" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="14">alfred / architecture</text>
+<text x="40" y="84" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="32">Reminders without another native app.</text>
+<text x="40" y="113" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="15">Supported HA/iPhone delivery, not unrestricted iOS notification interception.</text>
+<rect x="40" y="155" width="330" height="145" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="182" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">FOREGROUND INPUT</text>
+<text x="60" y="213" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Your intentional request</text>
+<text x="60" y="240" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">“Remind me in two minutes”</text>
+<text x="60" y="262" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Glasses → paired HTTPS client</text>
+<rect x="475" y="155" width="330" height="145" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="495" y="182" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">DURABLE IN HA</text>
+<text x="495" y="213" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">HA reminder scheduler</text>
+<text x="495" y="240" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Persist schedule + attempts</text>
+<text x="495" y="262" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Runs while HA is available</text>
+<text x="495" y="284" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Claims before external I/O</text>
+<rect x="910" y="155" width="330" height="145" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="930" y="182" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">OPTIONAL TARGET</text>
+<text x="930" y="213" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">HA notify service</text>
+<text x="930" y="240" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Selected mobile_app target</text>
+<text x="930" y="262" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Dispatch receipt is not proof</text>
+<text x="930" y="284" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">of a visible iPhone alert</text>
+<polyline points="370,220 475,220" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="392" y="202" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">token</text>
+<polyline points="805,220 910,220" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="850" y="202" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">due</text>
+<rect x="475" y="415" width="330" height="130" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="495" y="442" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">HA STORE</text>
+<text x="495" y="473" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Reminder inbox</text>
+<text x="495" y="500" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Stored due items / status</text>
+<text x="495" y="522" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Read when Alfred is active</text>
+<rect x="910" y="415" width="330" height="130" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="930" y="442" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">EXTERNAL TRANSPORT</text>
+<text x="930" y="473" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Remote push delivery</text>
+<text x="930" y="500" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">HA / OS push infrastructure</text>
+<text x="930" y="522" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Separate from home VPN path</text>
+<polyline points="640,300 640,415" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="1075,300 1075,415" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="40" y="640" width="330" height="130" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="667" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">ON REQUEST</text>
+<text x="60" y="698" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">G2 reminder review</text>
+<text x="60" y="725" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">“Show my reminders”</text>
+<text x="60" y="747" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Readable foreground response</text>
+<rect x="910" y="640" width="330" height="130" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="930" y="667" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">OWNER-CONFIRMED PATH</text>
+<text x="930" y="698" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">HA iPhone app</text>
+<text x="930" y="725" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Notification appears if allowed</text>
+<text x="930" y="747" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Network / Focus can affect it</text>
+<polyline points="475,480 420,480 420,705 370,705" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="429" y="593" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">paired read</text>
+<polyline points="1075,545 1075,640" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="40" y="367" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="15">The scheduler survives closing the glasses plugin; the plugin itself is not always running.</text>
+<text x="40" y="788" fill="#9ab4a2" font-family="Arial, sans-serif" font-size="13">Inbox presence ≠ push receipt. No general reading of other apps’ iOS notifications is implemented.</text>
+</svg>

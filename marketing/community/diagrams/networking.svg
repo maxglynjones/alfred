@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">Two gates. A separate identity check.</title><desc id="desc">A new URL setting cannot enlarge a packaged destination permission.</desc><defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#183023" stroke-width="0.5"/></pattern><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#8ae3a2" stroke-width="1.2"/></marker></defs><rect width="1280" height="720" fill="#07100b"/><rect width="1280" height="720" fill="url(#grid)" opacity="0.45"/>
+<text x="40" y="38" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="14">alfred / architecture</text>
+<text x="40" y="84" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="32">Two gates. A separate identity check.</text>
+<text x="40" y="113" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="15">A new URL setting cannot enlarge a packaged destination permission.</text>
+<rect x="40" y="155" width="320" height="145" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="182" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">PHONE CLIENT</text>
+<text x="60" y="213" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Alfred WebView</text>
+<text x="60" y="240" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">HTTP fetch() request</text>
+<text x="60" y="262" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Uses configured backend origin</text>
+<rect x="470" y="155" width="320" height="145" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="490" y="182" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">GATE 1</text>
+<text x="490" y="213" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Even destination gate</text>
+<text x="490" y="240" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Origin in packaged app.json?</text>
+<text x="490" y="262" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Unlisted: no request leaves</text>
+<rect x="900" y="155" width="340" height="145" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="920" y="182" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">AUTHENTICATED SERVER</text>
+<text x="920" y="213" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Your HA endpoint</text>
+<text x="920" y="240" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Valid HTTPS + scoped token</text>
+<text x="920" y="262" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Handles API / OPTIONS</text>
+<text x="920" y="284" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Returns explicit CORS headers</text>
+<polyline points="360,220 470,220" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="790,220 900,220" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="801" y="199" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">permitted origin</text>
+<rect x="40" y="440" width="320" height="130" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="467" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">GATE 2</text>
+<text x="60" y="498" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Browser CORS check</text>
+<text x="60" y="525" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Preflight / response validation</text>
+<text x="60" y="547" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Correct headers still required</text>
+<polyline points="1070,300 1070,370 200,370 200,440" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="555" y="353" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">preflight/API response</text>
+<polyline points="115,440 115,300" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="130" y="410" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">readable result</text>
+<rect x="470" y="440" width="770" height="130" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="490" y="467" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">INDEPENDENT BOUNDARIES</text>
+<text x="490" y="498" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Neither check substitutes for authentication</text>
+<text x="490" y="525" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">CORS cannot authorise an unlisted destination. Whitelisting cannot fix missing CORS.</text>
+<text x="490" y="547" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Pairing credentials authorise private operations; provider secrets stay in HA.</text>
+<text x="40" y="626" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="15">Preflight and response checks surround server I/O; CORS is not another proxy server.</text>
+<text x="40" y="688" fill="#9ab4a2" font-family="Arial, sans-serif" font-size="13">Official rules: full origins, no supported wildcards. One personal server currently means one origin-specific package.</text>
+</svg>

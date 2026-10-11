@@ -1,0 +1,130 @@
+{
+  "version": "0.20.2",
+  "platforms": ["iOS", "macOS", "Linux (experimental server)"],
+  "defaults": {
+    "apiKey": "",
+    "replyProvider": "none",
+    "replyModel": "",
+    "transcriptionProvider": "none",
+    "transcriptionModel": "",
+    "mailProvider": "none",
+    "calendarProvider": "none",
+    "profile": {
+      "name": "",
+      "addressAs": "none",
+      "gender": "",
+      "selfEmail": "",
+      "timezone": "UTC"
+    },
+    "interactionProfile": "store",
+    "dashboardAgenda": false,
+    "homeEntities": [],
+    "weatherCity": "",
+    "webSearchProvider": "none",
+    "webSearchModel": "",
+    "newsEnabled": true,
+    "haLists": {},
+    "newsSources": [],
+    "newsDigest": {
+      "enabled": false,
+      "delivery": "ha",
+      "weekdays": [1, 2, 3, 4, 5, 6, 7],
+      "time": "08:00"
+    },
+    "newsBackend": "alfred",
+    "shareConversation": false,
+    "assistEnabled": false,
+    "proactive": {
+      "enabled": false,
+      "briefing": false,
+      "time": "08:00",
+      "quietStart": "22:00",
+      "quietEnd": "07:00",
+      "watchEntities": []
+    },
+    "appleShortcuts": [],
+    "transcriptionEntity": "",
+    "transcriptionLanguage": "en",
+    "localRouter": {
+      "enabled": false,
+      "url": "",
+      "model": "qwen3:1.7b",
+      "timeoutMs": 1500
+    },
+    "localRouterKey": "",
+    "remoteAccessMethod": "private",
+    "cloudPolicy": "automatic",
+    "emailOverflow": true,
+    "confirmActions": false
+  },
+  "models": {
+    "openai": ["gpt-4.1-mini", "gpt-4.1"],
+    "claude": ["claude-sonnet-4-6"],
+    "speech": ["gpt-transcribe", "gpt-4o-mini-transcribe", "whisper-1"]
+  },
+  "features": [
+    {
+      "id": "conversation",
+      "name": "Ask Alfred",
+      "requires": "Choose a reply provider and add its API key, or run a local model. Voice also needs a speech service.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 physical/account validation required"
+    },
+    {
+      "id": "lists",
+      "name": "HA tasks, shopping and reminders",
+      "requires": "Select native HA lists. Alfred schedules reminders; the HA iPhone app provides optional push.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 physical/account validation required"
+    },
+    {
+      "id": "home",
+      "name": "Home, scenes and media",
+      "requires": "Home Assistant with selected devices. Native controls require no MCP plugin.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 physical/account validation required"
+    },
+    {
+      "id": "google",
+      "name": "Gmail and Google Calendar",
+      "requires": "Optional Google OAuth registration, user consent and connected account. Sending needs additional approval.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 physical/account validation required"
+    },
+    {
+      "id": "outlook",
+      "name": "Outlook mail and calendar",
+      "requires": "Optional Microsoft OAuth registration, user consent and connected account. Sending needs additional approval.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 physical/account validation required"
+    },
+    {
+      "id": "weather",
+      "name": "Weather and daylight",
+      "requires": "Set a fallback town or permit approximate iPhone location. Open-Meteo receives the chosen location.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 physical/account validation required"
+    },
+    {
+      "id": "push",
+      "name": "iPhone notifications",
+      "requires": "HA Companion app with notification permission and a selected phone target.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 physical/account validation required"
+    },
+    {
+      "id": "web",
+      "name": "Web research and selected news",
+      "requires": "Select public news feeds; live web research additionally requires configured search credentials.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 live search/account validation required"
+    },
+    {
+      "id": "routines",
+      "name": "Routines, plans and personal knowledge",
+      "requires": "Review approved devices and create your own routines. Plans use the configured review preference; memories are explicitly saved.",
+      "guide": "docs/setup/README.md",
+      "validation": "experimental \u2014 real actions require validation"
+    }
+  ]
+}

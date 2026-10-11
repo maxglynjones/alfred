@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1020" viewBox="0 0 1280 1020" role="img" aria-labelledby="t d"><title id="t">Alfred connections</title><desc id="d">Home Assistant core with optional configured providers and service boundaries.</desc><defs><radialGradient id="glow"><stop stop-color="#17452a"/><stop offset="1" stop-color="#07110c"/></radialGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#375541" stroke-width=".5"/></pattern></defs><rect width="1280" height="1020" fill="#07110c"/><ellipse cx="650" cy="250" rx="650" ry="480" fill="url(#glow)"/><rect width="1280" height="1020" fill="url(#grid)" opacity=".28"/>
+<svg x="1090" y="52" width="108" height="108" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Alfred, your personal butler"><rect width="128" height="128" rx="30" fill="#0b2113"/><path fill="#c9fce0" d="M39 48c-5-26 46-35 50-7l-5 13-2-16c-12 6-27 2-35 8l-2 14zM46 50h7v15c0 10 5 17 11 17s11-7 11-17V50h7v15c0 14-8 24-18 24S46 79 46 65zM39 87l13 12 12 19H22v-12zM89 87l17 19v12H64l12-19zM49 91l12 6-12 7zM79 91l-12 6 12 7z"/><path d="M52 60h5m14 0h5M59 74h10" fill="none" stroke="#89d8a6" stroke-width="3" stroke-linecap="round"/><circle cx="75" cy="61" r="8" fill="none" stroke="#89d8a6" stroke-width="2"/><path d="M83 64v13" stroke="#89d8a6" stroke-width="2"/></svg>
+
+<text x="64" y="70" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="15" font-weight="400">YOUR SERVER. YOUR CONNECTIONS.</text>
+<text x="64" y="144" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="43" font-weight="700">One assistant. Your everyday tools.</text>
+<text x="64" y="190" fill="#adc8b5" font-family="Arial,sans-serif" font-size="23" font-weight="400">Choose the connections you need. Leave the rest switched off.</text>
+<rect x="64" y="242" width="1152" height="112" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="91" y="282" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="17" font-weight="700">G2 + EVEN iPHONE APP</text>
+<text x="91" y="320" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="25" font-weight="400">Deliberate voice → private HTTPS → your Home Assistant + Alfred</text>
+<rect x="64" y="399" width="366" height="198" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="86" y="432" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="12" font-weight="700">THROUGH HOME ASSISTANT</text>
+<text x="86" y="477" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="26" font-weight="700">Connected home</text>
+<text x="86" y="521" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">Hue / Innr lighting · Tapo plugs</text>
+<text x="86" y="550" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">Approved scenes, scripts and devices</text>
+<rect x="457" y="399" width="366" height="198" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="479" y="432" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="12" font-weight="700">NATIVE HA DATA</text>
+<text x="479" y="477" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="26" font-weight="700">Lists + reminders</text>
+<text x="479" y="521" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">Shopping · to-do · durable reminders</text>
+<text x="479" y="550" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">iPhone push through the HA app</text>
+<rect x="850" y="399" width="366" height="198" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="872" y="432" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="12" font-weight="700">YOUR DEFAULT ACCOUNTS</text>
+<text x="872" y="477" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="26" font-weight="700">Mail + calendar</text>
+<text x="872" y="521" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">Gmail + Google Calendar</text>
+<text x="872" y="550" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">Outlook / Microsoft¹</text>
+<rect x="64" y="629" width="366" height="198" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="86" y="662" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="12" font-weight="700">LOCAL ROUTES FIRST</text>
+<text x="86" y="707" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="26" font-weight="700">Speech + intelligence</text>
+<text x="86" y="751" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">HA speech / Whisper · OpenAI STT</text>
+<text x="86" y="780" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">OpenAI · Claude¹ · Ollama¹</text>
+<rect x="457" y="629" width="366" height="198" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="479" y="662" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="12" font-weight="700">CHOOSE YOUR SOURCES</text>
+<text x="479" y="707" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="26" font-weight="700">Weather + news</text>
+<text x="479" y="751" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">Saved town / opt-in phone location</text>
+<text x="479" y="780" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">Selected RSS feeds · daily digests</text>
+<rect x="850" y="629" width="366" height="198" rx="20" fill="#0c1c12" stroke="#42684e"/>
+<text x="872" y="662" fill="#8ddeaa" font-family="Arial,sans-serif" font-size="12" font-weight="700">WHEN YOU NEED MORE</text>
+<text x="872" y="707" fill="#e3f8eb" font-family="Arial,sans-serif" font-size="26" font-weight="700">Research + memory</text>
+<text x="872" y="751" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">OpenAI web research → self-email</text>
+<text x="872" y="780" fill="#b6d1c0" font-family="Arial,sans-serif" font-size="17" font-weight="400">Explicit preferences · saved reports</text>
+<text x="64" y="890" fill="#baf2cd" font-family="Arial,sans-serif" font-size="24" font-weight="400">Fast path: supported command → local route → observed service result</text>
+<text x="64" y="927" fill="#adc8b5" font-family="Arial,sans-serif" font-size="18" font-weight="400">Broader questions → chosen model • speech and web research are separate choices</text>
+<text x="64" y="980" fill="#89a693" font-family="Arial,sans-serif" font-size="14" font-weight="400">¹ Experimental adapters / wider testing needed. Devices require compatible HA integrations and approved scope.</text>
+</svg>

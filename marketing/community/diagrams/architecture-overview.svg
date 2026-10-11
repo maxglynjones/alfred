@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" role="img" aria-labelledby="title desc"><title id="title">Less screen. More done.</title><desc id="desc">An independently hosted assistant that complements the Even experience</desc><defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#183023" stroke-width="0.5"/></pattern><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#8ae3a2" stroke-width="1.2"/></marker></defs><rect width="1280" height="800" fill="#07100b"/><rect width="1280" height="800" fill="url(#grid)" opacity="0.45"/>
+<text x="40" y="38" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="14">alfred / architecture</text>
+<text x="40" y="84" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="32">Less screen. More done.</text>
+<text x="40" y="113" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="15">An independently hosted assistant that complements the Even experience</text>
+<rect x="40" y="160" width="320" height="170" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="187" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">ASK</text>
+<text x="60" y="218" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">G2 + iPhone</text>
+<text x="60" y="245" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Deliberate voice interaction</text>
+<text x="60" y="267" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Short reply or verified action tick</text>
+<text x="60" y="289" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Return to a passive display</text>
+<rect x="470" y="160" width="350" height="170" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="490" y="187" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">EXECUTE</text>
+<text x="490" y="218" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Your Home Assistant</text>
+<text x="490" y="245" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Alfred lives here</text>
+<text x="490" y="267" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Your credentials and approvals</text>
+<text x="490" y="289" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">No author-operated backend</text>
+<rect x="930" y="160" width="310" height="170" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="950" y="187" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">COMPLETE</text>
+<text x="950" y="218" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Your devices + lists</text>
+<text x="950" y="245" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Existing HA integrations</text>
+<text x="950" y="267" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Scenes, routines and lists</text>
+<text x="950" y="289" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Check observed results</text>
+<polyline points="360,245 470,245" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="368" y="223" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">private HTTPS</text>
+<polyline points="820,245 930,245" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="835" y="223" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">HA services</text>
+<rect x="40" y="445" width="320" height="170" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="472" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">REVIEW WHEN NEEDED</text>
+<text x="60" y="503" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Your companion</text>
+<text x="60" y="530" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Lists / reminders / research</text>
+<text x="60" y="552" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Conversation and action history</text>
+<text x="60" y="574" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Connection recovery</text>
+<rect x="470" y="445" width="350" height="170" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="490" y="472" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">EXTEND</text>
+<text x="490" y="503" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Your chosen services</text>
+<text x="490" y="530" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Speech / AI / mail / calendar</text>
+<text x="490" y="552" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Weather / news / research</text>
+<text x="490" y="574" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Optional, separately configured</text>
+<rect x="930" y="445" width="310" height="170" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="950" y="472" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">NOTIFY</text>
+<text x="950" y="503" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Your iPhone reminders</text>
+<text x="950" y="530" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Durable scheduling in HA</text>
+<text x="950" y="552" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Existing HA Companion push</text>
+<text x="950" y="574" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">No new native Alfred app</text>
+<polyline points="200,445 200,390 590,390 590,330" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="645,330 645,445" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="775,330 775,390 1085,390 1085,445" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="40" y="687" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="21">Open-source Alfred • independent installations • stock Even firmware</text>
+<text x="40" y="723" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="15">Self-hosting does not mean every optional recogniser, integration or push route is entirely local.</text>
+<text x="40" y="768" fill="#9ab4a2" font-family="Arial, sans-serif" font-size="13">Current install: configure your HTTPS origin → generate your own Even package → pair to your HA.</text>
+</svg>

@@ -1,0 +1,7 @@
+flowchart LR
+  Client[G2 + official Even iPhone app] <-->|Private HTTPS / pairing| HA[Your HA + Alfred]
+  HA --> Devices[Approved devices / native lists / scenes]
+  Companion[Paired companion: deliberate review and recovery] <--> HA
+  HA --> Providers[Optional chosen speech / AI / personal services]
+  HA --> Push[Durable reminders / HA iPhone app push]
+  Independent[No shared Alfred backend / no author Mac dependency] -.-> HA

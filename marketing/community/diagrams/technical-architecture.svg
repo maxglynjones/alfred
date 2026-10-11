@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc"><title id="title">Your assistant. Your Home Assistant.</title><desc id="desc">Technical view • stock firmware • optional services stay explicit</desc><defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#183023" stroke-width="0.5"/></pattern><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#8ae3a2" stroke-width="1.2"/></marker></defs><rect width="1280" height="820" fill="#07100b"/><rect width="1280" height="820" fill="url(#grid)" opacity="0.45"/>
+<text x="40" y="38" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="14">alfred / architecture</text>
+<text x="40" y="84" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="32">Your assistant. Your Home Assistant.</text>
+<text x="40" y="113" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="15">Technical view • stock firmware • optional services stay explicit</text>
+<rect x="40" y="150" width="240" height="118" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="177" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">CORE</text>
+<text x="60" y="208" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Even G2</text>
+<text x="60" y="235" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Display + microphone</text>
+<text x="60" y="257" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">BLE through the Even app</text>
+<rect x="40" y="310" width="240" height="112" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="337" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">OPTIONAL</text>
+<text x="60" y="368" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Optional R1</text>
+<text x="60" y="395" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Intentional touch input</text>
+<text x="60" y="417" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Battery only if supplied</text>
+<rect x="360" y="150" width="320" height="272" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="380" y="177" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">CORE CLIENT</text>
+<text x="380" y="208" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Even iPhone app</text>
+<text x="380" y="235" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Alfred in its WebView</text>
+<text x="380" y="257" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">SDK capture / display bridge</text>
+<text x="380" y="279" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Paired client, not HA admin</text>
+<text x="380" y="301" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Hold → request → passive</text>
+<text x="380" y="323" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Foreground lifecycle</text>
+<rect x="760" y="150" width="480" height="272" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="780" y="177" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">SELF-HOSTED CORE</text>
+<text x="780" y="208" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Your HA + Alfred integration</text>
+<text x="780" y="235" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Host Tailscale Serve terminates HTTPS</text>
+<text x="780" y="257" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Private HTTP forwarding to HAOS VM</text>
+<text x="780" y="279" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Rules / bounded tools / approved targets</text>
+<text x="780" y="301" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Private settings + durable reminders</text>
+<text x="780" y="323" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">HA-authenticated command centre</text>
+<polyline points="280,209 360,209" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="300" y="195" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">BLE</text>
+<polyline points="280,365 320,365 320,280 360,280" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="680,247 760,247" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="687" y="227" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">HTTPS</text>
+<text x="710" y="302" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="12">Tailscale:</text>
+<text x="692" y="323" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="12">encrypted</text>
+<rect x="40" y="515" width="270" height="175" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="60" y="542" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">OPTIONAL PROVIDERS</text>
+<text x="60" y="573" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Speech / AI</text>
+<text x="60" y="600" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Chosen recogniser</text>
+<text x="60" y="622" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Local rules first; optional</text>
+<text x="60" y="644" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">local or cloud models</text>
+<polyline points="1000,422 1000,472 175.0,472 175.0,515" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="350" y="515" width="270" height="175" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="370" y="542" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">USER-SELECTED</text>
+<text x="370" y="573" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Devices + lists</text>
+<text x="370" y="600" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Approved HA entities</text>
+<text x="370" y="622" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Maintained vendor integrations</text>
+<text x="370" y="644" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Native HA to-do lists</text>
+<polyline points="1000,422 1000,472 485.0,472 485.0,515" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="660" y="515" width="270" height="175" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="680" y="542" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">OPTIONAL ADAPTERS</text>
+<text x="680" y="573" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Personal services</text>
+<text x="680" y="600" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">OAuth mail / calendar</text>
+<text x="680" y="622" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Weather, feeds, web research</text>
+<text x="680" y="644" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Provider-specific boundaries</text>
+<polyline points="1000,422 1000,472 795.0,472 795.0,515" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="970" y="515" width="270" height="175" rx="12" fill="#101d15" stroke="#3a6247"/>
+<text x="990" y="542" fill="#8ae3a2" font-family="Arial, sans-serif" font-size="11">PUSH OPTIONAL</text>
+<text x="990" y="573" fill="#e2f3e7" font-family="Arial, sans-serif" font-size="21">Reminders + push</text>
+<text x="990" y="600" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">Scheduled in HA</text>
+<text x="990" y="622" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">HA iPhone app notify target</text>
+<text x="990" y="644" fill="#bbcec1" font-family="Arial, sans-serif" font-size="14">External remote push path</text>
+<polyline points="1000,422 1000,472 1105.0,472 1105.0,515" fill="none" stroke="#8ae3a2" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="40" y="738" fill="#a5b8ab" font-family="Arial, sans-serif" font-size="15">Arrows below HA are service dependencies; results return through the paired HTTPS client.</text>
+<text x="40" y="788" fill="#9ab4a2" font-family="Arial, sans-serif" font-size="13">No shared Alfred backend. Tailscale direct paths are preferred; encrypted relay fallback can occur.</text>
+</svg>

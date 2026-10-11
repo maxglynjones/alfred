@@ -1,0 +1,45 @@
+node_modules/
+dist/
+*.ehpk
+.env*
+.pnpm-store/
+.local/
+archive/
+recordings/
+scan-*.png
+.DS_Store
+*.qcow2
+*.qcow2.xz
+*.utm/
+deployment.json
+
+*.tgz
+
+# Reproducible HA frontend/output; build from source rather than committing bundles.
+integrations/home-assistant/custom_components/alfred/frontend/app/
+integrations/home-assistant/*.zip
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+outputs/
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.xlsx
+*.pcap
+*.pem
+*.key
+*.plist
+coverage/
+
+# Owner-only publication material belongs outside the repository.
+maintainer-local/
+docs/publishing/GITHUB.md
+marketing/store/*-DRAFT.md
+marketing/store/SUBMISSION.md
+
+# Locally embedded docs are rebuilt from canonical Markdown.
+public/guides/

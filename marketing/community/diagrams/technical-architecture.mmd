@@ -1,0 +1,32 @@
+flowchart LR
+  subgraph Phone[User iPhone]
+    Even[Official Even app]
+    Client[Alfred WebView / SDK]
+    Companion[Paired web companion]
+    NotifyApp[HA iPhone Companion app]
+    Even --- Client
+  end
+  G2[G2 display / microphone] <-->|BLE through Even host| Even
+  R1[Optional R1 input] -->|BLE through Even host| Even
+  subgraph Host[User host: reference Mac M2 / UTM / HAOS]
+    Gateway[Tailscale Serve: TLS terminates on user Mac]
+    HA[Alfred integration in HA Core]
+    Rules[Rules / bounded tools / current approved targets]
+    Store[Private HA Store / durable reminders]
+    Admin[HA-authenticated command centre]
+    HA --> Rules
+    HA --- Store
+    Admin --> HA
+  end
+  Client <-->|Private HTTPS / scoped client token| Gateway
+  Companion <-->|HTTPS / own paired credential| Gateway
+  Gateway <-->|Private TCP forwarding / HTTP to HA VM| HA
+  Rules --> Native[Maintained HA integrations / devices / to-do lists]
+  HA --> Speech[Selected local or cloud STT]
+  Rules --> AI[Optional local interpreter / cloud or local conversation]
+  Rules --> Personal[Optional OAuth mail / calendar / search / feeds / weather]
+  Store --> Target[Selected HA mobile_app notify service]
+  Target --> Push[External remote push infrastructure]
+  Push --> NotifyApp
+  Transport[Tailscale: direct preferred / encrypted relay fallback] -.-> Client
+  Transport -.-> Gateway

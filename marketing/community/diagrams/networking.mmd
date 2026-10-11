@@ -1,0 +1,11 @@
+flowchart LR
+  Web[Alfred WebView request] --> Gate{Packaged exact origin permitted?}
+  Gate -->|No| Block[Blocked before network traffic]
+  Gate -->|Yes: API / OPTIONS as appropriate| HA[Your HTTPS HA endpoint]
+  HA --> Auth{Valid scoped client token for private operation?}
+  Auth -->|No| Reject[Authentication failure]
+  Auth -->|Yes| Response[API result + explicit CORS headers]
+  Response --> CORS{Browser preflight / response requirements satisfied?}
+  CORS -->|Yes| Client[Readable client result]
+  CORS -->|No| Error[Browser network / CORS failure]
+  Setting[Editing a runtime URL] -.->|Does not change| Gate

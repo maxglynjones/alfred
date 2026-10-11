@@ -1,0 +1,3 @@
+# Isolated tests do not install or start Home Assistant.
+aiohttp>=3.12,<4
+black>=25,<27

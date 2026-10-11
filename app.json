@@ -1,0 +1,27 @@
+{
+  "package_id": "app.alfred.assistant",
+  "edition": "202601",
+  "name": "Alfred",
+  "version": "0.20.2",
+  "min_sdk_version": "0.0.16",
+  "entrypoint": "index.html",
+  "permissions": [
+    {
+      "name": "g2-microphone",
+      "desc": "Capture voice during an intentional hold or tap recording session."
+    },
+    {
+      "name": "network",
+      "desc": "Connect to your configured private Home Assistant server for voice, home controls and personal assistant services.",
+      "whitelist": []
+    },
+    {
+      "name": "location",
+      "desc": "Optionally use approximate phone location for local weather when you choose Use phone location; your saved town remains the fallback."
+    }
+  ],
+  "supported_languages": [
+    "en"
+  ],
+  "min_app_version": "2.2.10"
+}

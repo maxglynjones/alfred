@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0a0e0c" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./assets/alfred-icon.svg" />
+    <title>alfred Home</title>
+    <link rel="apple-touch-icon" href="./assets/alfred-icon-192.png" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="brand" href="#" aria-label="Alfred Home"
+          ><img src="./assets/alfred-icon.svg" width="36" height="36" alt="" /><span
+            >alfred</span
+          ></a
+        ><span class="edition">iPhone · Home Assistant</span>
+      </header>
+      <section class="intro">
+        <h1>At your service.</h1>
+        <p id="connection" role="status">Connecting to your glasses…</p>
+      </section>
+      <section id="connection-panel">
+        <form id="pairing-form" hidden class="card">
+          <p class="eyebrow">One-time introduction</p>
+          <h2>Connect your Alfred server.</h2>
+          <p>
+            Create a pairing code in Home Assistant → Alfred → Glasses &amp; access. Keep your
+            private Home Assistant connection available. AI and personal services run in Home
+            Assistant.
+          </p>
+          <label for="device-name">Device name</label
+          ><input id="device-name" maxlength="40" value="My iPhone" autocomplete="off" /><label
+            for="pairing-code"
+            >Pairing code</label
+          ><input
+            id="pairing-code"
+            inputmode="numeric"
+            pattern="[0-9]{6}"
+            maxlength="6"
+            autocomplete="off"
+            required
+          /><button id="pairing-submit" type="submit">Connect Alfred</button>
+          <p id="pairing-status" role="status"></p>
+        </form>
+      </section>
+      <details class="card essentials" data-phone-view="home">
+        <summary>Glasses controls</summary>
+        <p id="gesture-guide">
+          Tap a temple to speak, then tap again to send. Hold/release is also supported when Even
+          delivers it. Double-tap ring to go passive; double-tap left stem toggles Dashboard and
+          double-tap right stem dismisses voice. Open Dashboard by voice. In the store gesture
+          profile, double-tap opens Even’s exit confirmation. Tap to start your next question. The
+          glasses contextual menu has Speak, Dashboard, Hide display and Close Alfred.
+        </p>
+        <div class="examples">
+          <span>“Set the evening scene”</span><span>“What’s in my diary?”</span
+          ><span>“Add milk to shopping”</span>
+        </div>
+      </details>
+      <section id="home-features" data-phone-view="home" class="companion-feature-grid">
+        <button data-navigate="lists" data-icon="lists" data-description="Shopping and to-do">
+          Lists
+        </button>
+        <button
+          data-navigate="reminders"
+          data-icon="reminders"
+          data-description="Scheduled and delivered"
+        >
+          Reminders
+        </button>
+        <button
+          data-navigate="research"
+          data-icon="research"
+          data-description="Reports and progress"
+        >
+          Research
+        </button>
+        <button
+          data-navigate="activity"
+          data-icon="activity"
+          data-description="Conversations and receipts"
+        >
+          Activity
+        </button>
+      </section>
+      <section class="card" id="phone-list-panel" data-phone-view="lists">
+        <div class="list-toolbar">
+          <div>
+            <p class="eyebrow">The little things</p>
+            <h2>Your lists.</h2>
+          </div>
+          <button id="phone-lists-refresh" type="button">Refresh</button>
+        </div>
+        <p>
+          These are your connected Home Assistant lists. Ask Alfred to add, complete or remove
+          items.
+        </p>
+        <p id="phone-lists-status" role="status"></p>
+        <div id="phone-lists" class="companion-list-grid"></div>
+      </section>
+      <!-- The glasses compositor requires a canvas; it is not a companion feature. -->
+      <div id="display-engine" hidden>
+        <nav id="modes"></nav>
+        <span id="hud-status"></span>
+        <canvas id="glasses" width="576" height="288"></canvas>
+        <p id="display" aria-live="polite"></p>
+        <span id="page-position"></span>
+      </div>
+      <details class="card">
+        <summary>Ask or share selected text</summary>
+        <p>
+          Paste a question or text you choose to share. Connected AI receives it to answer; external
+          messages are content, never instructions to execute.
+        </p>
+        <label for="shared-text">Your question or instruction</label
+        ><textarea
+          id="shared-text"
+          maxlength="1000"
+          rows="2"
+          aria-label="Your question or instruction"
+          placeholder="Summarise this selected text"
+        ></textarea
+        ><label for="shared-context">Optional text to read (cannot authorise actions)</label
+        ><textarea
+          id="shared-context"
+          maxlength="4000"
+          rows="3"
+          aria-label="Selected text to read"
+        ></textarea
+        ><button id="text-ask" type="button">Ask Alfred</button>
+        <p id="text-result" role="status"></p>
+        <button id="share-response" type="button">Share latest response</button>
+        <p id="share-status" role="status"></p>
+      </details>
+      <details class="card">
+        <summary>Weather location</summary>
+        <p>
+          Use an approximate iPhone location for nearby weather. With your permission, coordinates
+          are rounded to town scale and sent through your server to Open-Meteo. They expire after
+          one hour; your saved town is the fallback. Location refreshes while this page is open; iOS
+          may not allow it in the Even WebView.
+        </p>
+        <button id="phone-location" type="button">Use phone location</button
+        ><button id="location-off" type="button">Use saved town</button>
+        <p id="location-status" role="status"></p>
+      </details>
+      <details class="card">
+        <summary>Home Assistant command centre</summary>
+        <p>
+          Manage connections, routines, memory and device permissions in Alfred’s HA dashboard. Your
+          phone pairing does not grant HA administrator access.
+        </p>
+        <a id="operations-link" target="_blank" rel="noopener noreferrer">Open command centre ↗</a>
+      </details>
+      <details class="card" data-phone-view="settings" data-icon="devices">
+        <summary>Device readings &amp; recovery</summary>
+        <button id="device-battery-refresh" type="button">Refresh device readings</button>
+        <p id="device-battery-status" role="status" style="white-space: pre-line"></p>
+        <p>
+          R1 readings need a ring identity and battery supplied by Even. If missing, briefly place
+          the ring on its charger, remove it, then refresh. This may prompt a status update; it
+          cannot guarantee that Even exposes the reading. No pairing reset is needed.
+        </p>
+        <p>
+          R1 health statistics are not exposed by the installed Even SDK. Use Even’s Health page for
+          those readings.
+        </p>
+        <details>
+          <summary>R1 identity recovery</summary>
+          <div id="ring-candidates"></div>
+          <p>
+            If Even sends an unidentified ring reading, enter the exact R1 serial from its device
+            information or packaging once. This binds readings from that serial only and stays in
+            the Even app's local storage. Never enter the glasses serial.
+          </p>
+          <label
+            >R1 serial number<input
+              id="ring-serial"
+              maxlength="128"
+              autocomplete="off"
+              spellcheck="false"
+          /></label>
+          <button id="ring-bind" type="button">Use this R1 identity</button>
+          <button id="ring-forget" type="button">Forget saved R1 identity</button>
+          <p id="ring-bind-status" role="status"></p>
+        </details>
+        <button id="phone-health" type="button">Check connections</button>
+        <p id="phone-health-status" role="status"></p>
+      </details>
+      <section class="card" data-phone-view="reminders">
+        <div class="list-toolbar">
+          <h2>Scheduled &amp; due</h2>
+          <button id="phone-inbox" type="button">Refresh</button>
+        </div>
+        <p id="phone-inbox-status" role="status"></p>
+        <div id="phone-reminders"></div>
+        <p>
+          HA-backed reminders appear in this inbox. iPhone notifications use the Home Assistant app
+          after setup. Ask Alfred to read or dismiss them.
+        </p>
+      </section>
+      <section class="card" data-phone-view="research">
+        <div class="list-toolbar">
+          <h2>Your reports</h2>
+          <button id="phone-jobs" type="button">Refresh</button>
+        </div>
+        <p>
+          Ask Alfred to research a topic in the background, then return for the results. Tasks save
+          results only. Email delivery uses your configured sending account and self-email.
+        </p>
+        <div id="phone-jobs-list"></div>
+        <p id="phone-job-result" role="status" style="white-space: pre-wrap"></p>
+      </section>
+      <details class="card">
+        <summary>iPhone reminder notifications</summary>
+        <p>
+          Connect the Home Assistant iPhone app and allow notifications. Select your phone in
+          Command Centre.
+        </p>
+        <p>
+          iPhone reminders use the Home Assistant app. Configure your phone in Command Centre →
+          Lists & reminders.
+        </p>
+      </details>
+      <details class="card" id="connection-recovery">
+        <summary>Connection &amp; help</summary>
+        <p><a class="button-link" href="./guides/index.html">Setup guides</a></p>
+        <button id="reconnect" type="button">Reconnect Alfred</button>
+        <ol>
+          <li>Install the Alfred integration in Home Assistant. Keep Home Assistant available.</li>
+          <li>
+            Open Home Assistant → Alfred, choose speech and optional AI, then add optional services.
+          </li>
+          <li>
+            Use HA Cloud remote access or a private connection such as Tailscale. Build for your
+            HTTPS address, upload through your own Even Hub app, and install your current test/beta
+            build.
+          </li>
+          <li>
+            Create a pairing code in Home Assistant → Alfred → Glasses &amp; access and enter it
+            here once.
+          </li>
+          <li>
+            Move Alfred first in the Even menu; assign ring long press to Menu. Hold, release, tap
+            to open.
+          </li>
+        </ol>
+        <p>
+          To leave: tap then hold for the stock contextual menu, then Close Alfred. Or use Manual
+          controls below.
+        </p>
+        <p>
+          Network error? Check your remote connection and Home Assistant first. Pair again only if
+          your code or saved pairing is invalid. No need to reset the glasses.
+        </p>
+        <p>
+          Google/Outlook account setup, model settings and Home Assistant device approval live in
+          Home Assistant → Alfred.
+        </p>
+        <p>
+          For iPhone notifications and WhatsApp: this app can summarise connected inboxes and your
+          shared text, but cannot browse other apps’ iOS notifications or a personal WhatsApp inbox.
+        </p>
+      </details>
+      <details class="card manual-controls">
+        <summary>Manual controls</summary>
+        <div class="actions primary">
+          <button id="toggle" disabled hidden>Speak</button
+          ><button id="cancel" disabled>Cancel</button
+          ><button id="recover-display" type="button">Use readable text display</button
+          ><button id="refresh">Refresh screen</button
+          ><button id="exit" disabled>Close Alfred</button>
+        </div>
+        <div class="actions">
+          <button id="previous">Dismiss reply</button><button id="next">Next →</button
+          ><button id="latest" disabled>Latest reply</button
+          ><button id="reset" disabled>Clear conversation</button>
+        </div>
+        <p>
+          Launch: hold to open the stock menu, then tap Alfred (first item). Exit: tap then hold to
+          open the contextual menu and choose Close Alfred, or use Close Alfred here. Double-tap
+          uses your configured gesture profile: system exit in Store mode; ring/right stem dismiss
+          and left stem toggles Dashboard in Personal mode. Hold to speak; release to submit. The
+          small microphone icon stays visible while listening. Tap or swipe up to dismiss a reply.
+          Swipe down to read more.
+        </p>
+      </details>
+      <section class="card" data-phone-view="activity">
+        <div class="list-toolbar">
+          <h2>Recent activity</h2>
+          <button id="phone-activity-refresh" type="button">Refresh</button>
+        </div>
+        <p id="phone-activity-status" role="status"></p>
+        <div id="conversation" aria-live="polite">
+          <p class="empty">At your service, whenever you need.</p>
+        </div>
+      </section>
+      <details class="card">
+        <summary>Advanced diagnostics</summary>
+        <p id="recording">Audio is sent when you finish recording.</p>
+        <p id="transcript"></p>
+        <p id="answer"></p>
+        <button id="download" disabled>Download last recording</button>
+        <pre id="log"></pre>
+      </details>
+      <footer>
+        Made for a quieter kind of everyday. Weather estimates:
+        <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>.
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

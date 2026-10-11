@@ -1,0 +1,123 @@
+{
+  "groups": {
+    "home": {
+      "pattern": "\\b(light|lights|lamp|lamps|room|rooms|brightness|colour|color|scene|scenes|temperature|warmer|cooler|heating|thermostat|fan|switch|blind|blinds|curtain|cover|camera|home assistant)\\b",
+      "tools": [
+        "list_saved_scenes",
+        "save_home_scene",
+        "control_saved_scene",
+        "remove_saved_scene",
+        "get_lights",
+        "control_lights",
+        "control_light_targets",
+        "set_light_properties",
+        "control_light_palette",
+        "discover_home",
+        "get_home_history",
+        "control_home_area",
+        "control_home_entity",
+        "read_home_mcp_tool",
+        "list_home_mcp_tools",
+        "prepare_home_mcp_call"
+      ]
+    },
+    "lists": {
+      "pattern": "\\b(shopping|todo|to-do|tasks?|groceries)\\b",
+      "tools": [
+        "rename_todo",
+        "list_todos",
+        "add_todos",
+        "set_todos_completed",
+        "remove_todos",
+        "add_todo",
+        "set_todo_completed",
+        "remove_todo",
+        "rename_shopping_item",
+        "list_shopping",
+        "add_shopping_items",
+        "set_shopping_items_bought",
+        "remove_shopping_items",
+        "set_shopping_bought",
+        "remove_shopping_item"
+      ]
+    },
+    "calendar": {
+      "pattern": "\\b(calendar|agenda|appointment|meeting|event|schedule|free time|friday|monday|tuesday|wednesday|thursday|saturday|sunday)\\b",
+      "tools": [
+        "find_free_time",
+        "prepare_calendar_change",
+        "list_calendars",
+        "get_calendar_events",
+        "get_outlook_events",
+        "prepare_outlook_event",
+        "prepare_calendar_event",
+        "get_meeting_briefing"
+      ]
+    },
+    "mail": {
+      "pattern": "\\b(email|emails|mail|gmail|outlook|inbox|attachment|send|draft)\\b",
+      "tools": [
+        "prepare_mail_reply",
+        "prepare_mail_draft",
+        "prepare_deliverable_to_self",
+        "search_email",
+        "read_emails",
+        "read_email",
+        "search_outlook_email",
+        "read_outlook_email",
+        "prepare_outlook_email",
+        "list_mail_attachments",
+        "read_mail_attachment",
+        "prepare_email"
+      ]
+    },
+    "reminders": {
+      "pattern": "\\b(remind|reminder|reminders|notify|notification|notifications)\\b",
+      "tools": [
+        "list_reminders",
+        "create_reminder",
+        "list_reminder_preferences",
+        "set_reminder_quiet_hours",
+        "pause_reminder",
+        "resume_reminder",
+        "cancel_reminder",
+        "dismiss_reminder"
+      ]
+    },
+    "research": {
+      "pattern": "\\b(search|research|internet|web|news|headline|headlines|article|articles|document|report|bbc)\\b",
+      "tools": [
+        "start_research_job",
+        "list_research_jobs",
+        "read_research_job",
+        "cancel_research_job",
+        "get_news",
+        "search_web",
+        "get_bbc_news",
+        "prepare_deliverable_to_self"
+      ]
+    },
+    "memory": {
+      "pattern": "\\b(remember|forget|memory|memories|preference|preferences)\\b",
+      "tools": ["list_memories", "save_memory", "forget_memory"]
+    },
+    "configuration": {
+      "pattern": "\\b(configure|configuration|settings|provider|model|setup|set up|profile)\\b",
+      "tools": ["get_configuration", "prepare_configuration_update"]
+    },
+    "apple": {
+      "pattern": "\\b(shortcut|shortcuts|music|focus|iphone)\\b",
+      "tools": ["list_iphone_shortcuts", "open_iphone_shortcut"]
+    }
+  },
+  "general": [
+    "search_web",
+    "get_news",
+    "get_weather",
+    "get_briefing",
+    "get_meeting_briefing",
+    "get_configuration",
+    "list_memories"
+  ],
+  "fullContextPattern": "\\b(plan|routine|routines|them|those|that|it|again|briefing)\\b"
+}

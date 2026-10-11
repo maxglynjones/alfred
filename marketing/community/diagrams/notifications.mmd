@@ -1,0 +1,9 @@
+flowchart LR
+  Request[Intentional reminder request] -->|Paired HTTPS| Scheduler[HA scheduler / persisted reminder]
+  Scheduler -->|Due while HA running| Inbox[Stored reminder inbox + delivery status]
+  Scheduler -->|Claim before dispatch| Notify[Selected HA mobile_app notify target]
+  Notify --> Infrastructure[External remote push infrastructure]
+  Infrastructure --> Phone[HA iPhone app notification]
+  Inbox -->|Read on request with paired token| Alfred[Active Alfred WebView]
+  Alfred -->|SDK / BLE| G2[Glasses reminder text]
+  Limits[No generic iOS Notification Centre reader / no background G2 delivery guarantee] -.-> Alfred

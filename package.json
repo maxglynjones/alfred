@@ -1,0 +1,38 @@
+{
+  "name": "alfred",
+  "version": "0.20.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build-guides.mjs && vite",
+    "build": "node scripts/build-guides.mjs && tsc --noEmit && vite build",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "qr": "evenhub qr",
+    "pack": "node scripts/pack.mjs",
+    "start": "node -e \"console.log('Alfred runs inside Home Assistant. See docs/setup/README.md.')\"",
+    "format": "prettier --write src scripts tests config index.html integrations/home-assistant/custom_components/alfred/frontend/panel.js",
+    "check:release": "node scripts/verify-release.mjs",
+    "test:ha": "python3 -B tests/ha-reminder-engine.py",
+    "pack:ha": "node scripts/build-ha.mjs",
+    "test:native": "python3 -B tests/ha-native-runtime.py",
+    "check:public": "node scripts/audit-public.mjs",
+    "build:self-hosted": "node scripts/prepare-self-hosted.mjs",
+    "build:guides": "node scripts/build-guides.mjs"
+  },
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "0.0.16"
+  },
+  "devDependencies": {
+    "@evenrealities/evenhub-cli": "^0.1.14",
+    "@types/node": "^22.0.0",
+    "prettier": "3.6.2",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "packageManager": "pnpm@10.18.3",
+  "license": "MIT"
+}

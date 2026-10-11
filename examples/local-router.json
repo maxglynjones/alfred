@@ -1,0 +1,7 @@
+{
+  "bind": "REPLACE_WITH_PRIVATE_BIND_ADDRESS",
+  "port": 11435,
+  "allow_addresses": ["REPLACE_WITH_HA_ADDRESS"],
+  "model": "qwen3:1.7b",
+  "key": ""
+}

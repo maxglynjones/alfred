@@ -1,0 +1,16 @@
+{
+  "domain": "alfred",
+  "name": "Alfred",
+  "version": "0.20.2",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/",
+  "codeowners": [],
+  "iot_class": "local_push",
+  "requirements": [],
+  "dependencies": [
+    "http",
+    "frontend",
+    "conversation",
+    "stt"
+  ]
+}

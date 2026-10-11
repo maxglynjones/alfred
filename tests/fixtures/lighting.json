@@ -1,0 +1,147 @@
+[
+  {
+    "entity_id": "light.fixture_1",
+    "name": "Bedroom lamp",
+    "room": "Bedroom"
+  },
+  {
+    "entity_id": "light.fixture_2",
+    "name": "Bedroom spot 1",
+    "room": "Bedroom"
+  },
+  {
+    "entity_id": "light.fixture_3",
+    "name": "Bedroom spot 2",
+    "room": "Bedroom"
+  },
+  {
+    "entity_id": "light.fixture_4",
+    "name": "Bedroom spot 3",
+    "room": "Bedroom"
+  },
+  {
+    "entity_id": "light.fixture_5",
+    "name": "Bedroom spot 4",
+    "room": "Bedroom"
+  },
+  {
+    "entity_id": "light.fixture_6",
+    "name": "Bathroom spot 1",
+    "room": "Bathroom"
+  },
+  {
+    "entity_id": "light.fixture_7",
+    "name": "Bathroom spot 2",
+    "room": "Bathroom"
+  },
+  {
+    "entity_id": "light.fixture_8",
+    "name": "Bathroom spot 3",
+    "room": "Bathroom"
+  },
+  {
+    "entity_id": "light.fixture_9",
+    "name": "Hallway spot 1",
+    "room": "Hallway"
+  },
+  {
+    "entity_id": "light.fixture_10",
+    "name": "Hallway spot 2",
+    "room": "Hallway"
+  },
+  {
+    "entity_id": "light.fixture_11",
+    "name": "Hallway spot 3",
+    "room": "Hallway"
+  },
+  {
+    "entity_id": "light.fixture_12",
+    "name": "Hallway spot 4",
+    "room": "Hallway"
+  },
+  {
+    "entity_id": "light.fixture_13",
+    "name": "Kitchen spot 1",
+    "room": "Kitchen"
+  },
+  {
+    "entity_id": "light.fixture_14",
+    "name": "Kitchen spot 2",
+    "room": "Kitchen"
+  },
+  {
+    "entity_id": "light.fixture_15",
+    "name": "Kitchen spot 3",
+    "room": "Kitchen"
+  },
+  {
+    "entity_id": "light.fixture_16",
+    "name": "Kitchen spot 4",
+    "room": "Kitchen"
+  },
+  {
+    "entity_id": "light.fixture_17",
+    "name": "Kitchen spot 5",
+    "room": "Kitchen"
+  },
+  {
+    "entity_id": "light.fixture_18",
+    "name": "Kitchen spot 6",
+    "room": "Kitchen"
+  },
+  {
+    "entity_id": "light.fixture_19",
+    "name": "Dining Room spot 1",
+    "room": "Dining Room"
+  },
+  {
+    "entity_id": "light.fixture_20",
+    "name": "Dining Room spot 2",
+    "room": "Dining Room"
+  },
+  {
+    "entity_id": "light.fixture_21",
+    "name": "Living Room spot 1",
+    "room": "Living Room"
+  },
+  {
+    "entity_id": "light.fixture_22",
+    "name": "Living Room spot 2",
+    "room": "Living Room"
+  },
+  {
+    "entity_id": "light.fixture_23",
+    "name": "Living Room spot 3",
+    "room": "Living Room"
+  },
+  {
+    "entity_id": "light.fixture_24",
+    "name": "Living Room spot 4",
+    "room": "Living Room"
+  },
+  {
+    "entity_id": "light.fixture_25",
+    "name": "Living Room spot 5",
+    "room": "Living Room"
+  },
+  {
+    "entity_id": "light.fixture_26",
+    "name": "Living Room spot 6",
+    "room": "Living Room"
+  },
+  {
+    "entity_id": "light.fixture_27",
+    "name": "Living Room spot 7",
+    "room": "Living Room"
+  },
+  {
+    "entity_id": "light.fixture_28",
+    "name": "Living Room spot 8",
+    "room": "Living Room"
+  },
+  {
+    "entity_id": "light.fixture_29",
+    "name": "Dining Room spot 3",
+    "room": "Dining Room"
+  }
+]

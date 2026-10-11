@@ -1,0 +1,13 @@
+# Experimental on Linux/cloud. Review docs/setup/CLOUD.md first.
+services:
+  homeassistant:
+    image: ghcr.io/home-assistant/home-assistant:stable
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./config:/config
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      TZ: Etc/UTC
+# Host firewall/private network must restrict 8123. No automatic privileged USB.
+# Select and test a fixed HA release tag for production upgrades.
